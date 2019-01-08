@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 8, 2019, 9:26:35 AM
+    Author     : oguz
+*/
+
+/*
+ACAEB0
+*/
+.FonBackground{
+    -fx-background-color: #FFFFFF;
+    
+}
+
+.avatar .decoration{
+    -fx-fill:transparent;
+}
+
+.profilBackground{
+    -fx-background-image: url(../images/icons/overflow.jpg);
+    -fx-background-repeat : no-repeat;
+    -fx-background-size: cover;
+}
+
+.bottomline{
+    -fx-border-color:#ACAEB0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.rightline{
+    -fx-border-color:#ACAEB0;
+    -fx-border-width: 0 1 0 0;
+}
+
+.topline{
+    -fx-border-color:#ACAEB0;
+    -fx-border-width: 0 0 0 1;
+}
+
+.buttons:hover{
+    -fx-background-color: #F3F3F3;
+}
+
+.messageSend{
+    -fx-background-color: #F5F6F6;
+    -fx-border-color:#ACAEB0;
+    -fx-border-width: 1 0 0 0;
+}
+
+.messageText{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color:#ACAEB0;
+    -fx-border-radius: 5 5 5 5;
+}
+
+.search {
+    -fx-border-color:#ACAEB0;
+    -fx-border-radius: 50%;
+}
+
+.scroll-pane:fitToWidth{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane:fitToWidth .viewport{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane:fitToWidth .scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane:fitToWidth .scroll-bar:vertical .increment-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane:fitToWidth .scroll-bar:vertical .decrement-button{
+     -fx-background-color: transparent;
+}
+.scroll-pane:fitToWidth .scroll-bar:vertical .decrement-button .decrement-arrow{
+     -fx-background-color: transparent;
+}
+
+.scroll-pane:fitToWidth .scroll-bar:vertical .thumb{
+    -fx-background-color: #C1C1C1;
+    -fx-background-insets: 0 5 0 5;
+    
+}
+
+.scroll-pane:fitToWidth .scroll-bar:vertical .increment-button .increment-arrow{
+    -fx-background-color: transparent;
+}
+
+.count{
+    -fx-background-color: #3498db;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius: 100%;   
+}
+
+.nonSelection{
+     -fx-border-color:#ACAEB060;
+     -fx-border-width: 0 0 1 0;
+     -fx-border-insets: 0 10 0 10;
+}
+
+.nonSelection:hover{
+     -fx-border-color:#F5F6F6;
+}
+
+.selection{
+     -fx-background-color:#F5F6F6;
+     -fx-border-color:#2ECC71;
+     -fx-border-width: 0 0 0 5;
+}

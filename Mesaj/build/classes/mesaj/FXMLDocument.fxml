@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="801.0" prefWidth="1253.0" styleClass="FonBackground" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mesaj.FXMLDocumentController">
+   <children>
+      <BorderPane prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" styleClass="bottomline" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane prefHeight="49.0" prefWidth="62.0" styleClass="buttons">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons/menu.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefWidth="280.0" styleClass="rightline" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane prefHeight="60.0">
+                     <opaqueInsets>
+                        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+                     </opaqueInsets>
+                     <children>
+                        <HBox prefHeight="24.0" styleClass="search">
+                           <StackPane.margin>
+                              <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+                           </StackPane.margin>
+                           <children>
+                              <StackPane prefHeight="49.0" prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icons/search.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </StackPane>
+                              <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Arama" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children></StackPane>
+                  <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="80.0" spacing="10.0" styleClass="selection" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Avatar radius="30.0">
+                                       <image>
+                                          <Image url="@images/icons/profile-image.png" />
+                                       </image>
+                                    </Avatar>
+                                    <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                             <children>
+                                                <Label text="Oğuz Korkut" textFill="#6f6969">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Circle fill="#10d74f" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                             </children>
+                                          </HBox>
+                                          <Label text="Gelen Mesaj" textFill="#acaeb0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="10.0">
+                                       <children>
+                                          <Label text="12:12" textFill="#acaeb0" />
+                                          <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="25.0" minWidth="25.0" prefHeight="25.0" prefWidth="25.0" styleClass="count" text="10" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" right="12.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="80.0" spacing="10.0" styleClass="nonSelection">
+                                 <children>
+                                    <Avatar radius="30.0">
+                                       <image>
+                                          <Image url="@images/icons/profile-image.png" />
+                                       </image>
+                                    </Avatar>
+                                    <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                             <children>
+                                                <Label text="Oğuz Korkut" textFill="#6f6969">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Circle fill="#10d74f" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                             </children>
+                                          </HBox>
+                                          <Label text="Gelen Mesaj" textFill="#acaeb0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="10.0">
+                                       <children>
+                                          <Label text="12:12" textFill="#acaeb0" />
+                                          <Label alignment="CENTER" contentDisplay="RIGHT" minHeight="25.0" minWidth="25.0" prefHeight="25.0" prefWidth="25.0" styleClass="count" text="10" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" right="12.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children></VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" styleClass="bottomline">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="User Name" textFill="#acaeb0" HBox.hgrow="ALWAYS" />
+                        <StackPane prefHeight="49.0" prefWidth="50.0" styleClass="buttons">
+                           <children>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/icons/add-user.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </StackPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+                  <StackPane prefHeight="70.0" styleClass="messageSend">
+                     <children>
+                        <HBox styleClass="messageText">
+                           <children>
+                              <StackPane prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="buttons">
+                                       <image>
+                                          <Image url="@images/icons/attachment.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                              <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mesaj" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" styleClass="buttons" text="Gönder" textFill="#acaeb0">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <AnchorPane fx:id="profilAnchor" prefWidth="254.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
