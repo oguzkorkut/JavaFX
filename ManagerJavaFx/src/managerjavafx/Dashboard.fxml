@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="904.0" prefWidth="1301.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="238.0" layoutY="63.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="38.0" layoutY="88.0" text="DASHBOARD">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox layoutX="14.0" layoutY="200.0" prefHeight="170.0" prefWidth="1301.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="220.0">
+         <children>
+            <Pane prefHeight="170.0" prefWidth="300.0" style="-fx-background-color: #2D70EE;">
+               <children>
+                  <Label layoutX="84.0" layoutY="99.0" text="Total Students">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="46.0" text="500">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane prefHeight="170.0" prefWidth="300.0" style="-fx-background-color: #EEAC4C;">
+               <children>
+                  <Label layoutX="104.0" layoutY="93.0" text="Total Hours">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="108.0" layoutY="40.0" text="1000">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane prefHeight="170.0" prefWidth="300.0" style="-fx-background-color: #5CB55B;">
+               <children>
+                  <Label layoutX="115.0" layoutY="77.0" text="Total Lessons">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="128.0" layoutY="32.0" text="10">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane prefHeight="170.0" prefWidth="300.0" style="-fx-background-color: #D7543E;">
+               <children>
+                  <Label layoutX="122.0" layoutY="77.0" text="Missed Classes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="160.0" layoutY="32.0" text="2">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <SplitPane dividerPositions="0.6261373035566584" layoutX="23.0" layoutY="419.0" prefHeight="403.0" prefWidth="1211.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="419.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="377.0" prefWidth="754.0">
+               <children>
+                  <TableView layoutX="10.0" layoutY="19.0" prefHeight="364.0" prefWidth="734.0">
+                    <columns>
+                      <TableColumn prefWidth="148.0" text="Teacher's Name" />
+                      <TableColumn prefWidth="105.0" text="Time" />
+                      <TableColumn prefWidth="105.0" text="Attended" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <PieChart layoutX="50.0" layoutY="23.0" prefHeight="356.0" prefWidth="365.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
