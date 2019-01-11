@@ -1,0 +1,32 @@
+.buttonfx{
+    -fx-background-color: #f3f3f3;
+    
+}
+
+.buttonfx:hover{
+    -fx-background-color: #C0D5F7;
+}
+
+.buttonfx:pressed{
+    -fx-background-color: #73A3EF;
+}
+
+.root {
+-fx-background-color: linear-gradient(from 35% 0% to 70% 100%,#43B4FC,#055CAC);
+-fx-background-image: url(../images/icon-16.png);
+}
+
+
+.jfx-button .text{
+    -fx-text-alignment: left; 
+}
+
+.jfx-button{
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.50) , 10,0,0,5 );
+}
+
+
+.rightline{
+    -fx-border-color:#ACAEB0;
+    -fx-border-width: 0 2 0 0;
+}
