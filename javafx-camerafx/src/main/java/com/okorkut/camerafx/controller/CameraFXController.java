@@ -13,13 +13,11 @@ import javax.imageio.ImageIO;
 
 import com.github.sarxos.webcam.Webcam;
 import com.github.sarxos.webcam.WebcamResolution;
-import com.jfoenix.controls.JFXButton;
+import com.okorkut.camerafx.util.CameraFXConstants;
 
 import javafx.application.Platform;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -42,84 +40,38 @@ public class CameraFXController implements Initializable {
 
 	@FXML
 	private ImageView imgWebCamCapturedImage;
+	
+	private Thread webCamThread;
+	
+	private Thread th;
 
 	// ------------------------------------------------------------------------------//
-	private class WebCamInfo {
-
-		private String webCamName;
-		private int webCamIndex;
-
-		public String getWebCamName() {
-			return webCamName;
-		}
-
-		public void setWebCamName(String webCamName) {
-			this.webCamName = webCamName;
-		}
-
-		public int getWebCamIndex() {
-			return webCamIndex;
-		}
-
-		public void setWebCamIndex(int webCamIndex) {
-			this.webCamIndex = webCamIndex;
-		}
-
-		@Override
-		public String toString() {
-			return webCamName;
-		}
-	}
-
-	// ------------------------------------------------------------------------------//
-	private String cameraListPromptText = "Kamera Seçiniz";// Choose Camera
-
 	private Webcam webCam = null;
 	private boolean stopCamera = false;
-	private BufferedImage grabbedImage;
 	private ObjectProperty<Image> imageProperty = new SimpleObjectProperty<Image>();
 
 	// ------------------------------------------------------------------------------//
-
-//	@FXML
-//	private void handleStartButtonClick(ActionEvent event) {
-//		System.out.println("Button:" + event.getSource());
-//		startWebCamCamera();
-//	}
 
 	@FXML
 	private void handleTakePictureButtonClick(ActionEvent event) {
 		System.out.println("Button:" + event.getSource());
 		stopWebCamCamera();
 	}
+	
+	@FXML
+	private void handleCloseButtonClick(ActionEvent event) {
+		System.out.println("Button:" + event.getSource());
+		disposeWebCamCamera();
+	}
 
-//	@FXML
-//	private void handleCloseButtonClick(ActionEvent event) {
-//		System.out.println("Button:" + event.getSource());
-//		disposeWebCamCamera();
-//	}
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
 		System.out.println("initialize WebCamController");
 
-		int webCamCounter = 0;
-
-		ObservableList<WebCamInfo> options = FXCollections.observableArrayList();
-
-		for (Webcam webcam : Webcam.getWebcams()) {
-			WebCamInfo webCamInfo = new WebCamInfo();
-			webCamInfo.setWebCamIndex(webCamCounter);
-			webCamInfo.setWebCamName(webcam.getName());
-			options.add(webCamInfo);
-			webCamCounter++;
+		if (Webcam.getWebcams().size() != 0) {
+			initializeWebCam(0);
 		}
-
-		initializeWebCam(0);
-
-//		ComboBox<WebCamInfo> cameraOptions = new ComboBox<WebCamInfo>();
-//		cameraOptions.setItems(options);
-//		cameraOptions.setPromptText(cameraListPromptText);
 	}
 
 	protected void initializeWebCam(final int webCamIndex) {
@@ -146,7 +98,7 @@ public class CameraFXController implements Initializable {
 			}
 		};
 
-		Thread webCamThread = new Thread(webCamTask);
+		webCamThread = new Thread(webCamTask);
 		webCamThread.setDaemon(true);
 		webCamThread.start();
 
@@ -200,7 +152,7 @@ public class CameraFXController implements Initializable {
 			}
 		};
 
-		Thread th = new Thread(task);
+		th = new Thread(task);
 		th.setDaemon(true);
 		th.start();
 		imgWebCamCapturedImage.imageProperty().bind(imageProperty);
@@ -210,9 +162,20 @@ public class CameraFXController implements Initializable {
 	protected void disposeWebCamCamera() {
 		stopCamera = true;
 		webCam.close();
-//		btnCamreaStart.setDisable(true);
-//		btnCamreaStop.setDisable(true);
-//		primaryStage.close();
+		
+		int webListenerCount = webCam.getWebcamListenersCount();
+		
+		for (int i = 0; i < webListenerCount; i++) {
+			webCam.removeWebcamListener(webCam.getWebcamListeners()[i]);
+		}
+		
+//		webCam.dispos
+//		webCamThread.stop();
+//		th.stop();
+		
+//		webCam.removeWebcamListener(l)
+//		WebcamDefaultDriver.
+//		CameraFXConstants.PRIMARY_STAGE.close();
 	}
 
 	protected void startWebCamCamera() {
@@ -224,7 +187,6 @@ public class CameraFXController implements Initializable {
 
 	protected void stopWebCamCamera() {
 		stopCamera = true;
-
 //		btnCamreaStart.setDisable(false);
 //		btnCamreaStop.setDisable(true);
 	}
