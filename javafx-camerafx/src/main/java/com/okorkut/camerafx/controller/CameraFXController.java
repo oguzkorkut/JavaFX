@@ -11,9 +11,11 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import javax.imageio.ImageIO;
 
-import com.github.sarxos.webcam.Webcam;
-import com.github.sarxos.webcam.WebcamResolution;
-import com.okorkut.camerafx.util.CameraFXConstants;
+import com.okorkut.camerafx.webcam.Webcam;
+import com.okorkut.camerafx.webcam.WebcamResolution;
+
+//import com.github.sarxos.webcam.Webcam;
+//import com.github.sarxos.webcam.WebcamResolution;
 
 import javafx.application.Platform;
 import javafx.beans.property.ObjectProperty;
@@ -41,10 +43,6 @@ public class CameraFXController implements Initializable {
 	@FXML
 	private ImageView imgWebCamCapturedImage;
 	
-	private Thread webCamThread;
-	
-	private Thread th;
-
 	// ------------------------------------------------------------------------------//
 	private Webcam webCam = null;
 	private boolean stopCamera = false;
@@ -98,7 +96,7 @@ public class CameraFXController implements Initializable {
 			}
 		};
 
-		webCamThread = new Thread(webCamTask);
+		Thread webCamThread = new Thread(webCamTask);
 		webCamThread.setDaemon(true);
 		webCamThread.start();
 
@@ -152,7 +150,7 @@ public class CameraFXController implements Initializable {
 			}
 		};
 
-		th = new Thread(task);
+		Thread th = new Thread(task);
 		th.setDaemon(true);
 		th.start();
 		imgWebCamCapturedImage.imageProperty().bind(imageProperty);
@@ -163,19 +161,14 @@ public class CameraFXController implements Initializable {
 		stopCamera = true;
 		webCam.close();
 		
+		Webcam.shutdown();
+		
 		int webListenerCount = webCam.getWebcamListenersCount();
 		
 		for (int i = 0; i < webListenerCount; i++) {
 			webCam.removeWebcamListener(webCam.getWebcamListeners()[i]);
 		}
 		
-//		webCam.dispos
-//		webCamThread.stop();
-//		th.stop();
-		
-//		webCam.removeWebcamListener(l)
-//		WebcamDefaultDriver.
-//		CameraFXConstants.PRIMARY_STAGE.close();
 	}
 
 	protected void startWebCamCamera() {
