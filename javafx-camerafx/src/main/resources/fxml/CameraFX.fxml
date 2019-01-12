@@ -28,7 +28,7 @@
                <children>
                   <StackPane prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <JFXButton fx:id="btnTakePicture" contentDisplay="BOTTOM" onAction="#handleTakePictureButtonClick"  prefHeight="145.0" prefWidth="159.0" styleClass="buttonfx" stylesheets="@../css/main.css" text="Hazır">
+                        <JFXButton fx:id="btnTakePicture" contentDisplay="BOTTOM" onAction="#handleTakePictureButtonClick" prefHeight="145.0" prefWidth="159.0" styleClass="buttonfx" stylesheets="@../css/main.css" text="Hazır">
                            <graphic>
                               <ImageView fitHeight="93.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -50,11 +50,11 @@
                   </StackPane>
                   <StackPane prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <JFXButton fx:id="btnRestart" contentDisplay="BOTTOM" onAction="#handleRestartButtonClick" prefHeight="145.0" prefWidth="159.0" styleClass="buttonfx" stylesheets="@../css/main.css" text="KAPAT">
+                        <JFXButton fx:id="btnRestart" contentDisplay="BOTTOM" onAction="#handleRestartButtonClick" prefHeight="145.0" prefWidth="159.0" styleClass="buttonfx" stylesheets="@../css/main.css" text="Yenile">
                            <graphic>
                               <ImageView fitHeight="93.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/close.png" />
+                                    <Image url="@../images/restart.png" />
                                  </image>
                                  <cursor>
                                     <Cursor fx:constant="HAND" />

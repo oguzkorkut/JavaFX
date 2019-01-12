@@ -11,7 +11,6 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import javax.imageio.ImageIO;
 
-import com.okorkut.camerafx.CameraFX;
 import com.okorkut.camerafx.util.CameraFXConstants;
 import com.okorkut.camerafx.webcam.Webcam;
 import com.okorkut.camerafx.webcam.WebcamResolution;
@@ -67,7 +66,11 @@ public class CameraFXController implements Initializable {
 	@FXML
 	private void handleRestartButtonClick(ActionEvent event) {
 		System.out.println("Button:" + event.getSource());
-		stopCamera = false;
+		
+		startWebCamStream();
+//		startWebCamStream();
+//		btnCamreaStop.setDisable(false);
+//		btnCamreaStart.setDisable(true);
 	}
 	
 	@Override
@@ -140,19 +143,6 @@ public class CameraFXController implements Initializable {
 						e.printStackTrace();
 					}
 				}
-
-//				ByteArrayOutputStream byteOutput = new ByteArrayOutputStream();
-//
-//				ImageIO.write(SwingFXUtils.fromFXImage(imageProperty.get(), null), "png", byteOutput);
-//
-//				com.itextpdf.text.Image graph;
-//				graph = com.itextpdf.text.Image.getInstance(byteOutput.toByteArray());
-//
-//				try (OutputStream outputStream = new FileOutputStream("C:\\Java\\JavaFX\\screen.png")) {
-//					byteOutput.writeTo(outputStream);
-//				}
-//
-//				System.out.println("save");
 				return null;
 			}
 		};
@@ -179,21 +169,9 @@ public class CameraFXController implements Initializable {
 		CameraFXConstants.PRIMARY_STAGE.close();
 	}
 
-	protected void startWebCamCamera() {
-		stopCamera = false;
-		startWebCamStream();
-//		btnCamreaStop.setDisable(false);
-//		btnCamreaStart.setDisable(true);
-	}
-
-	protected void stopWebCamCamera() {
-		stopCamera = true;
-//		btnCamreaStart.setDisable(false);
-//		btnCamreaStop.setDisable(true);
-	}
-	
 	private void takePicture() {
 		stopCamera = true;
+		
 		try {
 			ByteArrayOutputStream byteOutput = new ByteArrayOutputStream();
 

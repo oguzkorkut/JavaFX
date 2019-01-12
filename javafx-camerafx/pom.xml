@@ -114,15 +114,6 @@
 			<artifactId>bridj</artifactId>
 			<version>0.7.0</version>
 		</dependency> 
-
-
-		<!-- <dependency>
-			<groupId>net.java.dev.jna</groupId>
-			<artifactId>jna</artifactId>
-			<version>5.2.0</version>
-		</dependency>  -->
-		
-		
 		
 		<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
 		<dependency>
