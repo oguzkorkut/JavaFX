@@ -16,9 +16,9 @@ public class CameraFX extends Application {
 	private static final Logger logger = LogManager.getLogger(CameraFX.class);
 
 	public static void main(String[] args) {
-		logger.trace("Tredaş Main App Started...");
+		logger.trace("CameraFX Main App Started...");
 		launch(args);
-		logger.trace("Tredaş Main App Finished...");
+		logger.trace("CameraFX Main App Finished...");
 	}
 
 	@Override

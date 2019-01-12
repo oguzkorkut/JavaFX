@@ -50,7 +50,29 @@
                   </StackPane>
                   <StackPane prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <JFXButton fx:id="btnClose" contentDisplay="BOTTOM" onAction="#handleCloseButtonClick" prefHeight="145.0" prefWidth="159.0" styleClass="buttonfx" stylesheets="@../css/main.css" text="KAPAT">
+                        <JFXButton fx:id="btnRestart" contentDisplay="BOTTOM" onAction="#handleRestartButtonClick" prefHeight="145.0" prefWidth="159.0" styleClass="buttonfx" stylesheets="@../css/main.css" text="KAPAT">
+                           <graphic>
+                              <ImageView fitHeight="93.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/close.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btnClose1" contentDisplay="BOTTOM" onAction="#handleCloseButtonClick" prefHeight="145.0" prefWidth="159.0" styleClass="buttonfx" stylesheets="@../css/main.css" text="KAPAT">
                            <graphic>
                               <ImageView fitHeight="93.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
