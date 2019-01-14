@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: transparent;" stylesheets="@../css/UploadKitFXUI.css" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.okorkut.javaui.controller.UploadKitFXUIController">
+   <children>
+      <StackPane layoutX="163.0" layoutY="123.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder; -fx-font-size: 3em; -fx-fill: #c1c1c1;" text="Please wait">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" style="-fx-background-color: #E52B4A;" />
+                  <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <ProgressBar prefWidth="200.0" progress="0.27" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder; -fx-font-size: 1.5em;" text="22 %">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+               <children>
+                  <StackPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 100;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 100;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <ImageView fitHeight="112.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/cloud-backup-up-arrow.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-font-size: 1.3em;" text="Uploading" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-font-size: 1.4em; -fx-fill: #E12A49;" text="Rashid Coder" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

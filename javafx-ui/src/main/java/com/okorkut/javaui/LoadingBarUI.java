@@ -11,9 +11,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class JavaUI extends Application {
+public class LoadingBarUI extends Application {
 
-	private static final Logger logger = LogManager.getLogger(JavaUI.class);
+	private static final Logger logger = LogManager.getLogger(LoadingBarUI.class);
 
 	public static void main(String[] args) {
 		logger.trace("JavaUI Main App Started...");
