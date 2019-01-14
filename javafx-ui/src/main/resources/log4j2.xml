@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="camerafx"
+	packages="">
+	<Appenders>
+		<RollingFile name="fileAppender" fileName="logs/App.log"
+			filePattern="logs/rollingAll/App-%d{dd-MM-yyyy-HH-mm-ss}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{HH:mm:ss,SSS} %-5p: %c %t %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB" />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="errorFileAppender"
+			fileName="logs/App_error.log"
+			filePattern="logs/rollingErrorAll/App_error-%d{dd-MM-yyyy-HH-mm-ss}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{HH:mm:ss,SSS} %-5p: %c %t %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB" />
+			</Policies>
+		</RollingFile>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout>
+				<Pattern>%d{HH:mm:ss,SSS} %-5p: %c %t %m%n</Pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<logger name="org.apache" level="info" additivity="false">
+			<appender-ref ref="fileAppender" />
+			<appender-ref ref="errorFileAppender" level="error" />
+			<appender-ref ref="STDOUT" />
+		</logger>
+		<logger name="com.okorkut" level="trace" additivity="false">
+			<appender-ref ref="fileAppender" />
+			<appender-ref ref="errorFileAppender" level="error" />
+			<appender-ref ref="STDOUT" />
+		</logger>
+		<Root level="trace">
+			<appender-ref ref="STDOUT" />
+			<appender-ref ref="fileAppender" />
+		</Root>
+	</Loggers>
+</Configuration>
