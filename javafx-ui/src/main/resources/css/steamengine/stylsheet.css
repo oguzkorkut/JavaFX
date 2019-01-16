@@ -1,0 +1,79 @@
+.parent{
+    -fx-background-color: #151515;
+}
+.background-image{
+    -fx-background-color:rgba(15, 15, 15,0.8);
+    -fx-background-image: url(../../images/Need-For-Speed.jpg);
+    -fx-background-size: 1024px 400px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.header{
+    -fx-background-color: #252626;
+}
+
+.closebutton{
+    -fx-background-color: #FF6052;
+    -fx-background-radius: 100%;    
+}
+.closebutton:hover{
+    -fx-background-color: red;
+    -fx-background-radius: 100%;    
+}
+
+.maxbutton{
+    -fx-background-color: #FFBE0B;
+    -fx-background-radius: 100%;    
+}
+.maxbutton:hover{
+    -fx-background-color: yellow;
+    -fx-background-radius: 100%;    
+}
+
+.minbutton{
+    -fx-background-color: green;
+    -fx-background-radius: 100%;    
+}
+.minbutton:hover{
+    -fx-background-color: #0DD02A;
+    -fx-background-radius: 100%;    
+}
+.messageIcon{
+    -fx-background-color: #0DD02A;
+    -fx-background-radius: 0px;
+}
+
+.options{
+    -fx-text-fill:#fff;    
+}
+.options{
+    -fx-text-fill:#fff;
+    -fx-text-decoration: underline;        
+}
+
+.textfield-box{
+    -fx-background-color:rgba(69, 65, 56,0.8);
+    -fx-background-radius:10px;
+}
+
+.side_bar{
+    -fx-background-color:rgba(15, 15, 15,0.8);
+}
+.sidebar-buttons{
+    -fx-background-color:transparent;
+}
+.sidebar-buttons:hover{
+    -fx-background-color:transparent;
+    -fx-border-color:#0DD02A;
+    -fx-border-width:0px 0px 0px 5px;
+}
+
+.steam-button{
+    -fx-background-color:#327BE1;
+}
+
+.links{
+}
+.links:hover{
+    -fx-text-fill:#0DD02A;
+}

@@ -63,6 +63,21 @@
 			<artifactId>jfoenix</artifactId>
 			<version>8.0.8</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx -->
+		<dependency>
+		    <groupId>de.jensd</groupId>
+		    <artifactId>fontawesomefx</artifactId>
+		    <version>8.1.1</version>
+		</dependency> 
+
+		<!--<dependency>
+		    <groupId>de.jensd</groupId>
+		    <artifactId>fontawesomefx</artifactId>
+		    <version>8.9</version>
+		</dependency>-->
+		
+		
 
 		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
 		<dependency>
@@ -96,6 +111,94 @@
 			<artifactId>itextpdf</artifactId>
 			<version>5.5.13</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx-commons -->
+		<!-- <dependency>
+		    <groupId>de.jensd</groupId>
+		    <artifactId>fontawesomefx-commons</artifactId>
+		    <version>9.1.2</version>
+		    <scope>runtime</scope>
+		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+		<dependency>
+		    <groupId>com.sun.mail</groupId>
+		    <artifactId>javax.mail</artifactId>
+		    <version>1.6.1</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx-fontawesome -->
+		<!-- <dependency>
+		    <groupId>de.jensd</groupId>
+		    <artifactId>fontawesomefx-fontawesome</artifactId>
+		    <version>4.7.0-9.1.2</version>
+		</dependency> -->
+		
+		<!-- <dependency>
+			<groupId>fontawesomefx-commons-8.15</groupId>
+			<artifactId>fontawesomefx-commons-8.15</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/fontawesomefx-commons-8.15.jar</systemPath>
+		</dependency> -->
+		<dependency>
+			<groupId>fontawesomefx-fontawesome-4.7.0-5</groupId>
+			<artifactId>fontawesomefx-fontawesome-4.7.0-5</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/fontawesomefx-fontawesome-4.7.0-5.jar</systemPath>
+			<!--<systemPath>${basedir}/lib/ojdbc7.jar</systemPath> -->
+		</dependency>
+		
+		
+		<!-- Library assistant -->
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+		    <groupId>com.google.guava</groupId>
+		    <artifactId>guava</artifactId>
+		    <version>21.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>javax.mail-api</artifactId>
+		    <version>1.6.1</version>
+		</dependency>
+				<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+		<dependency>
+		    <groupId>org.apache.derby</groupId>
+		    <artifactId>derby</artifactId>
+		    <version>10.14.2.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.derby</groupId>
+		    <artifactId>derbyclient</artifactId>
+		    <version>10.14.2.0</version>
+		</dependency> 
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<!-- <dependency>
+		    <groupId>com.h2database</groupId>
+		    <artifactId>h2</artifactId>
+		    <version>1.4.197</version>
+		</dependency> -->
+		
+		
+		<!-- https://mvnrepository.com/artifact/com.github.dhorions/boxable -->
+		<dependency>
+		    <groupId>com.github.dhorions</groupId>
+		    <artifactId>boxable</artifactId>
+		    <version>1.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-csv</artifactId>
+		    <version>1.4</version>
+		</dependency>
+		
+				
+				
+				
 
 	</dependencies>
 

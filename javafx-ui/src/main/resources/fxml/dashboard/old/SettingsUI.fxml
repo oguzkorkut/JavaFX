@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="400.0" styleClass="dark-panel" stylesheets="@stylesheet.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="bennycoder.main.SettingsUIController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="FORCE TOUCHE ENABLED" textFill="#e1dada">
+         <font>
+            <Font name="Alegreya Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="44.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" text="Lorem ipsum is a dummy text used as a placeholder in web pages." textFill="#b5b2b2" wrapText="true" />
+      <JFXToggleButton layoutX="321.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="65.0" toggleColor="WHITE" toggleLineColor="#f3a978" />
+      <Label layoutX="14.0" layoutY="118.0" text="ONE-CLICK LOGIN" textFill="#e1dada">
+         <font>
+            <Font name="Alegreya Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="148.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" text="Lorem ipsum is a dummy text used as a placeholder in web pages." textFill="#b5b2b2" wrapText="true" />
+      <JFXToggleButton layoutX="321.0" layoutY="131.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="65.0" toggleColor="WHITE" toggleLineColor="#f3a978" />
+      <Label layoutX="14.0" layoutY="212.0" text="AUTO-SUBSCRIBE" textFill="#e1dada">
+         <font>
+            <Font name="Alegreya Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="242.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" text="Lorem ipsum is a dummy text used as a placeholder in web pages." textFill="#b5b2b2" wrapText="true" />
+      <JFXToggleButton layoutX="321.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="65.0" toggleColor="WHITE" toggleLineColor="#f3a978" />
+      <Label layoutX="14.0" layoutY="316.0" text="AUTO-SUBSCRIBE" textFill="#e1dada">
+         <font>
+            <Font name="Alegreya Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXSlider layoutX="14.0" layoutY="346.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="350.0" />
+      <JFXButton layoutX="287.0" layoutY="396.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="100.0" ripplerFill="WHITE" styleClass="buttons" text="SAVE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="172.0" layoutY="396.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#close" prefHeight="35.0" prefWidth="100.0" ripplerFill="WHITE" styleClass="buttons" text="CANCEL">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

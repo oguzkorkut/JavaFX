@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="400.0" styleClass="dark-panel" stylesheets="@../../css/dashboard/stylesheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.okorkut.javaui.controller.dashboard.UserProfileUIController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="165.0" styleClass="circle">
+         <graphic>
+            <FontAwesomeIcon glyphStyle="-fx-fill:#596575"  size="6em" />
+         </graphic>
+      </Label>
+      <Label layoutX="155.0" layoutY="233.0" text="Benny Coder" textFill="#e1dada">
+         <font>
+            <Font name="Alegreya Sans Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="268.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" text="Lorem ipsum is a dummy text used as a placeholder in web pages." textFill="#b5b2b2" wrapText="true" />
+      <JFXButton layoutX="286.0" layoutY="396.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#close" prefHeight="35.0" prefWidth="100.0" ripplerFill="WHITE" styleClass="buttons" text="CANCEL">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="255.0" layoutY="237.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" styleClass="online" text="Label" />
+   </children>
+</AnchorPane>
