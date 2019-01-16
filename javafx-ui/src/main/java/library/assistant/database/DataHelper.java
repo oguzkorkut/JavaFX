@@ -11,10 +11,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- *
- * @author afsal
- */
 public class DataHelper {
 
     private final static Logger LOGGER = LogManager.getLogger(DatabaseHandler.class.getName());

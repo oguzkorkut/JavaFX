@@ -11,11 +11,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-/**
- * FXML Controller class
- *
- * @author Benny Inn
- */
 public class UserProfileUIController implements Initializable {
 
     /**

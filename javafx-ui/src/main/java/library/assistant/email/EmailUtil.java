@@ -14,9 +14,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- * @author Villan
- */
 public class EmailUtil {
 
     private final static Logger LOGGER = LogManager.getLogger(EmailUtil.class.getName());

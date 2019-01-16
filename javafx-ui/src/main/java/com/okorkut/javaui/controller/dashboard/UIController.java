@@ -15,10 +15,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
-/**
- *
- * @author Benny Coder Please Subscribe Us www.youtube.com/bennycoder
- */
 public class UIController implements Initializable {
 
     @FXML

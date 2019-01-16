@@ -16,10 +16,6 @@ import javafx.scene.Parent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
-/**
- *
- * @author Benny In
- */
 public class MainController implements Initializable {
 
     private double xOffset = 0;

@@ -1,19 +1,15 @@
 package library.assistant.database.export;
 
-import java.awt.Desktop;
 import java.io.File;
 import java.sql.CallableStatement;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
 import javafx.concurrent.Task;
 import library.assistant.alert.AlertMaker;
 import library.assistant.database.DatabaseHandler;
 import library.assistant.util.LibraryAssistantUtil;
 
-/**
- *
- * @author Villan
- */
 public class DatabaseExporter extends Task<Boolean> {
 
     private final File backupDirectory;

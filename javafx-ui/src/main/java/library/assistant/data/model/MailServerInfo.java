@@ -1,8 +1,5 @@
 package library.assistant.data.model;
 
-/**
- * @author afsal
- */
 public class MailServerInfo {
 
     private String mailServer;

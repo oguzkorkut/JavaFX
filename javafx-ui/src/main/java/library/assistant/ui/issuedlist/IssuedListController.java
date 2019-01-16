@@ -29,9 +29,6 @@ import library.assistant.ui.settings.Preferences;
 import library.assistant.ui.callback.BookReturnCallback;
 import library.assistant.util.LibraryAssistantUtil;
 
-/*
- * @author afsal villan
- */
 public class IssuedListController implements Initializable {
 
     private ObservableList<IssueInfo> list = FXCollections.observableArrayList();

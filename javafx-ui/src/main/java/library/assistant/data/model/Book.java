@@ -1,9 +1,5 @@
 package library.assistant.data.model;
 
-/**
- *
- * @author afsal
- */
 public class Book {
     String id;
     String title;

@@ -17,11 +17,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- * FXML Controller class
- *
- * @author Villan
- */
 public class TestMailController implements Initializable, GenericCallback {
 
     private final static Logger LOGGER = LogManager.getLogger(TestMailController.class.getName());

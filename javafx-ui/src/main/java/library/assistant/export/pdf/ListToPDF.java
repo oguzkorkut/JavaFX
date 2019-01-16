@@ -1,18 +1,17 @@
 package library.assistant.export.pdf;
 
-import be.quodlibet.boxable.BaseTable;
-import be.quodlibet.boxable.datatable.DataTable;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import library.assistant.alert.AlertMaker;
+
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
-/*
-@author afsal-5502
- */
+import be.quodlibet.boxable.BaseTable;
+import be.quodlibet.boxable.datatable.DataTable;
+import library.assistant.alert.AlertMaker;
+
 
 public class ListToPDF {
 

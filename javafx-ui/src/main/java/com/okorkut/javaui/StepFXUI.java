@@ -8,10 +8,6 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/**
- *
- * @author Benny Coder
- */
 public class StepFXUI extends Application {
 
     @Override

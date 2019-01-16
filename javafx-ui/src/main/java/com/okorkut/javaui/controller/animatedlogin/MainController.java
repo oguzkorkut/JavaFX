@@ -14,10 +14,6 @@ import javafx.scene.Parent;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
-/**
- *
- * @author Benny
- */
 public class MainController implements Initializable {
 
     @FXML

@@ -5,10 +5,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- *
- * @author afsal
- */
 public class DefaultExceptionHandler implements UncaughtExceptionHandler {
 
     private final static Logger LOGGER = LogManager.getLogger(DefaultExceptionHandler.class.getName());

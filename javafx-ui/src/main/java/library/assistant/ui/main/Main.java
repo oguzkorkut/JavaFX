@@ -1,8 +1,10 @@
 package library.assistant.ui.main;
 
-import com.jfoenix.controls.JFXDecorator;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javafx.application.Application;
-import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -10,9 +12,6 @@ import javafx.stage.Stage;
 import library.assistant.database.DatabaseHandler;
 import library.assistant.exceptions.ExceptionUtil;
 import library.assistant.util.LibraryAssistantUtil;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class Main extends Application {
 

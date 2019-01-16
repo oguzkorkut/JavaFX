@@ -4,10 +4,6 @@ import java.io.PrintStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- *
- * @author afsal
- */
 public class ExceptionUtil {
 
     public static void init() {
