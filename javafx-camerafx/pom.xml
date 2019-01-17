@@ -102,7 +102,7 @@
 			<version>1.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.github.sarxos/webcam-capture -->
+		<!-- https://mvnrepository.com/artifact/com.github/webcam-capture -->
 		 <!-- <dependency>
 		    <groupId>com.github.sarxos</groupId>
 		    <artifactId>webcam-capture</artifactId>

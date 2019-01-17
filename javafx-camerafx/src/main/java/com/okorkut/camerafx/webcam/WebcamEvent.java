@@ -7,7 +7,6 @@ import java.util.EventObject;
 /**
  * Webcam event.
  * 
- * @author Bartosz Firyn (SarXos)
  */
 public class WebcamEvent extends EventObject {
 

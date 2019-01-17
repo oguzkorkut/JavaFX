@@ -4,11 +4,6 @@ import com.okorkut.camerafx.webcam.WebcamDevice;
 import com.okorkut.camerafx.webcam.WebcamDriver;
 import com.okorkut.camerafx.webcam.WebcamTask;
 
-/**
- * Dispose webcam device.
- * 
- * @author Bartosz Firyn (sarxos)
- */
 public class WebcamDisposeTask extends WebcamTask {
 
 	public WebcamDisposeTask(WebcamDriver driver, WebcamDevice device) {

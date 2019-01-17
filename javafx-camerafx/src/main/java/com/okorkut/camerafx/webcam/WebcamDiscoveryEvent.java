@@ -7,7 +7,6 @@ import java.util.EventObject;
 /**
  * This event is generated when webcam has been found or lost.
  * 
- * @author Bartosz Firyn (sarxos)
  */
 public class WebcamDiscoveryEvent extends EventObject {
 

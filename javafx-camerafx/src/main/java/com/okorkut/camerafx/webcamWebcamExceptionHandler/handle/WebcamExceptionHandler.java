@@ -11,7 +11,6 @@ import org.slf4j.helpers.NOPLoggerFactory;
 /**
  * Used internally.
  * 
- * @author Bartosz Firyn (sarxos)
  */
 public class WebcamExceptionHandler implements UncaughtExceptionHandler {
 

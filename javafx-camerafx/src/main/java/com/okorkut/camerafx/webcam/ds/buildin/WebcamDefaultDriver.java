@@ -19,12 +19,6 @@ import com.okorkut.camerafx.webcam.ds.buildin.natives.DeviceList;
 import com.okorkut.camerafx.webcam.ds.buildin.natives.OpenIMAJGrabber;
 
 
-/**
- * Default build-in webcam driver based on natives from OpenIMAJ framework. It can be widely used on
- * various systems - Mac OS, Linux (x86, x64, ARM), Windows (win32, win64).
- *
- * @author Bartosz Firyn (SarXos)
- */
 public class WebcamDefaultDriver implements WebcamDriver, WebcamDiscoverySupport {
 
 	static {

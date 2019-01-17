@@ -21,7 +21,6 @@ public class WebcamProcessor {
 	/**
 	 * Thread doing supersync processing.
 	 *
-	 * @author sarxos
 	 */
 	public static final class ProcessorThread extends Thread {
 
@@ -35,7 +34,6 @@ public class WebcamProcessor {
 	/**
 	 * Thread factory for processor.
 	 *
-	 * @author Bartosz Firyn (SarXos)
 	 */
 	private static final class ProcessorThreadFactory implements ThreadFactory {
 
@@ -52,7 +50,6 @@ public class WebcamProcessor {
 	 * Heart of overall processing system. This class process all native calls wrapped in tasks, by
 	 * doing this all tasks executions are super-synchronized.
 	 *
-	 * @author Bartosz Firyn (SarXos)
 	 */
 	private static final class AtomicProcessor implements Runnable {
 

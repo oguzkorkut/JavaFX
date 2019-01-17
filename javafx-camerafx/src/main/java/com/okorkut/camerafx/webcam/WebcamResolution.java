@@ -7,7 +7,6 @@ import java.awt.Dimension;
 /**
  * Various resolutions.
  * 
- * @author Bartosz Firyn (sarxos)
  */
 public enum WebcamResolution {
 

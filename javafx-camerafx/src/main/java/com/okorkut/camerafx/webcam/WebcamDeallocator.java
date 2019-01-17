@@ -10,7 +10,6 @@ import java.io.PrintStream;
  * Deallocator which goal is to release all devices resources when SIGTERM
  * signal is detected.
  * 
- * @author Bartosz Firyn (SarXos)
  */
 final class WebcamDeallocator {
 

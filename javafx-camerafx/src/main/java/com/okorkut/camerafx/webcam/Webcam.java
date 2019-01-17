@@ -35,17 +35,10 @@ import com.okorkut.camerafx.webcam.ds.cgt.WebcamOpenTask;
 import com.okorkut.camerafx.webcam.ds.cgt.WebcamReadBufferTask;
 
 
-/**
- * Webcam class. It wraps webcam device obtained from webcam driver.
- *
- * @author Bartosz Firyn (bfiryn)
- */
 public class Webcam {
 
 	/**
 	 * Class used to asynchronously notify all webcam listeners about new image available.
-	 *
-	 * @author Bartosz Firyn (sarxos)
 	 */
 	private static final class ImageNotification implements Runnable {
 

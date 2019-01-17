@@ -15,9 +15,6 @@ import com.okorkut.camerafx.util.CameraFXConstants;
 import com.okorkut.camerafx.webcam.Webcam;
 import com.okorkut.camerafx.webcam.WebcamResolution;
 
-//import com.github.sarxos.webcam.Webcam;
-//import com.github.sarxos.webcam.WebcamResolution;
-
 import javafx.application.Platform;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -158,14 +155,14 @@ public class CameraFXController implements Initializable {
 		stopCamera = true;
 		webCam.close();
 		
-		Webcam.shutdown();
-		
-		int webListenerCount = webCam.getWebcamListenersCount();
-		
-		for (int i = 0; i < webListenerCount; i++) {
-			webCam.removeWebcamListener(webCam.getWebcamListeners()[i]);
-		}
-		
+//		Webcam.shutdown();
+//		
+//		int webListenerCount = webCam.getWebcamListenersCount();
+//		
+//		for (int i = 0; i < webListenerCount; i++) {
+//			webCam.removeWebcamListener(webCam.getWebcamListeners()[i]);
+//		}
+//		
 		CameraFXConstants.PRIMARY_STAGE.close();
 	}
 

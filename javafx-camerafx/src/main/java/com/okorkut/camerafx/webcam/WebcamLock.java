@@ -21,7 +21,6 @@ import org.slf4j.LoggerFactory;
  * completely disposed. Lock will remain for at least 2 seconds in case when JVM has not been
  * gracefully terminated (due to SIGSEGV, SIGTERM, etc).
  *
- * @author Bartosz Firyn (sarxos)
  */
 public class WebcamLock {
 
@@ -38,7 +37,6 @@ public class WebcamLock {
 	/**
 	 * Used to update lock state.
 	 *
-	 * @author sarxos
 	 */
 	private class LockUpdater extends Thread {
 

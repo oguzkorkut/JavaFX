@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
  * Shutdown hook to be executed when JVM exits gracefully. This class intention
  * is to be used internally only.
  * 
- * @author Bartosz Firyn (sarxos)
  */
 public final class WebcamShutdownHook extends Thread {
 

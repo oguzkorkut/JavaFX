@@ -3,7 +3,6 @@ package com.okorkut.camerafx.webcam;
 /**
  * Webcam listener.
  * 
- * @author Bartosz Firyn (SarXos)
  */
 public interface WebcamListener {
 

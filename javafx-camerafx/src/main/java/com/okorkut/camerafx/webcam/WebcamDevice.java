@@ -10,7 +10,6 @@ import java.util.Map;
 /**
  * Webcam device abstraction.
  * 
- * @author Bartosz Firyn (SarXos)
  */
 public interface WebcamDevice {
 
@@ -19,7 +18,6 @@ public interface WebcamDevice {
 	 * possibility to access raw bytes or direct bytes buffer from native webcam
 	 * device.
 	 * 
-	 * @author Bartosz Firyn (SarXos)
 	 */
 	public static interface BufferAccess {
 
@@ -62,7 +60,6 @@ public interface WebcamDevice {
 	 * This interface may be implemented by devices which expect any specific
 	 * parameters.
 	 * 
-	 * @author Martin Krok (krok32) 
 	 */
 	public static interface Configurable {
 

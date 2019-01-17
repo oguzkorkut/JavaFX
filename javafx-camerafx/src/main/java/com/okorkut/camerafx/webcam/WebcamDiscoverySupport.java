@@ -5,7 +5,6 @@ package com.okorkut.camerafx.webcam;
  * This interface should be implemented by all webcam drivers which would like to support webcam
  * devices discovery mechanism.
  *
- * @author Bartosz Firyn (SarXos)
  */
 public interface WebcamDiscoverySupport {
 

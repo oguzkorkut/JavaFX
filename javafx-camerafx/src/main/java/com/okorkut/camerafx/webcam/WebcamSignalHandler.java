@@ -11,8 +11,6 @@ import sun.misc.SignalHandler;
 /**
  * Primitive signal handler. This class is using undocumented classes from
  * sun.misc.* and therefore should be used with caution.
- * 
- * @author Bartosz Firyn (SarXos)
  */
 @SuppressWarnings("restriction")
 final class WebcamSignalHandler implements SignalHandler {
