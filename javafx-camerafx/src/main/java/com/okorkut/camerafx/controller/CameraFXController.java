@@ -11,6 +11,10 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import javax.imageio.ImageIO;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.okorkut.camerafx.CameraFX;
 import com.okorkut.camerafx.util.CameraFXConstants;
 import com.okorkut.camerafx.webcam.Webcam;
 import com.okorkut.camerafx.webcam.WebcamResolution;
@@ -29,6 +33,7 @@ import javafx.scene.image.WritableImage;
 
 public class CameraFXController implements Initializable {
 
+	private static final Logger logger = LogManager.getLogger(CameraFXController.class);
 //	@FXML
 //	private JFXButton btnStartWebCam;
 //
@@ -50,19 +55,19 @@ public class CameraFXController implements Initializable {
 
 	@FXML
 	private void handleTakePictureButtonClick(ActionEvent event) {
-		System.out.println("Button:" + event.getSource());
+		logger.debug("Button:" + event.getSource());
 		takePicture();
 	}
 	
 	@FXML
 	private void handleCloseButtonClick(ActionEvent event) {
-		System.out.println("Button:" + event.getSource());
+		logger.debug("Button:" + event.getSource());
 		disposeWebCamCamera();
 	}
 	
 	@FXML
 	private void handleRestartButtonClick(ActionEvent event) {
-		System.out.println("Button:" + event.getSource());
+		logger.debug("Button:" + event.getSource());
 		
 		startWebCamStream();
 //		startWebCamStream();
@@ -72,7 +77,7 @@ public class CameraFXController implements Initializable {
 	
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		System.out.println("initialize WebCamController");
+		logger.debug("initialize WebCamController");
 
 		if (Webcam.getWebcams().size() != 0) {
 			initializeWebCam(0);
@@ -185,7 +190,7 @@ public class CameraFXController implements Initializable {
 		}
 		
 
-		System.out.println("save");
+		logger.debug("save");
 	}
 
 }

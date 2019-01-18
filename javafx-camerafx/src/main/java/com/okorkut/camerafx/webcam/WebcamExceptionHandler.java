@@ -26,7 +26,7 @@ public class WebcamExceptionHandler implements UncaughtExceptionHandler {
 	public void uncaughtException(Thread t, Throwable e) {
 		Object context = LoggerFactory.getILoggerFactory();
 		if (context instanceof NOPLoggerFactory) {
-			System.err.println(String.format("Exception in thread %s", t.getName()));
+			LOG.error(String.format("Exception in thread %s", t.getName()));
 			e.printStackTrace();
 		} else {
 			LOG.error(String.format("Exception in thread %s", t.getName()), e);
